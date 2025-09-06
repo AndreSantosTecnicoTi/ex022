@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            border: 1px dashed red;
+           
+            
+        }
+        .div-img{
+            width: 100%;
+            height: 100%;
+            /* background-image: url('imagens/wallpaper003.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain; */
+        }
+
+        img{
+            width: 98%;
+            height: 98%;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .posicao{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: rgba(127, 255, 212, 0.486);
+        }
+    </style>
+</head>
+<body>
+    <div class="div-img">
+        <img src="imagens/wallpaper003.jpg" alt="">
+    </div>
+
+    <div class="posicao"></div>
+    <script>
+
+        document.querySelector('.posicao').addEventListener('click',(evento)=>{
+           let div=document.querySelector(`${"."}`+evento.target.className)
+           
+           
+        })
+    </script>
+</body>
+</html>
